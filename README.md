@@ -1,5 +1,5 @@
-# Foodies-back-end
-##### Table of Contents
+# Foodies Delivery App
+##### Back End Created By Sarai Thomas##### Table of Contents
 - Introduction: Why Foodies?
 - Getting / Functionality
 - Future Features

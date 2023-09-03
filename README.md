@@ -16,15 +16,8 @@ I created Foodies because I noticed a lot of flaws within many other food delive
 #### `/restaurants`
 - Displays all of the restaurants we currently offer to our customers
     - restaurant name
-    - category 
-    - self_delivery
     - street_num 
-    - street_name 
-    - city 
-    - state 
-    - zip
-    - opens 
-    - closes 
+    - street_name  
     - image
  #### `/restaurants/:id`
 - Displays details about the restaurant including their menu/items available for order.

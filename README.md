@@ -12,6 +12,7 @@ I created Foodies because I noticed a lot of flaws within many other food delive
 2. If the food is delievered to the same building the algorithm should reveal the delivery address for both orders to save delivery drivers time and to ensure the fastest delievry possible which = higher tips for many users of the app.
 3. Self Delivery: Restaurants with their own delivery drivers can decide to assign their own people as delivery drivers for locations that fit their criteria.
 4. Zero Hidden Fees: no more fees that make the food nearly impossible to afford.
+
 ## Getting Started
 
 #### `/restaurants`

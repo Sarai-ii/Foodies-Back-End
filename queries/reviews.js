@@ -1,4 +1,4 @@
-const db = require("../db/dbConfig.js");
+const db = require("../db/dbconfig.js");
 
 const getAllReviews = async (restaurant_id) => {
   try {

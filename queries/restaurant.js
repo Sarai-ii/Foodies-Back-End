@@ -1,4 +1,4 @@
-const db = require("../db/dbConfig.js");
+const db = require("../db/dbconfig.js");
 
 //SHOW ALL ((GET))
 const getAllRestaurants = async () => {

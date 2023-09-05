@@ -33,6 +33,7 @@ CREATE TABLE menus (
     combo BOOLEAN NOT NULL,
     image VARCHAR,
     restaurant_id INTEGER REFERENCES restaurants (id)
+    ON DELETE CASCADE
     -- rating PERCENTAGE,
 );
 

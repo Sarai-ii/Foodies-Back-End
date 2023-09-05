@@ -54,10 +54,11 @@ restaurant.delete("/:id", async (req, res) => {
   const { id } = req.params;
   const deletedRestaurant = await deleteRestaurant(id);
   if (deletedRestaurant.id) {
-    // console.log("working")
+    console.log("working")
     res.status(200).json(deletedRestaurant);
   } else {
-    res.status(404).json("Restaurant not found");
+    console.log(id)
+    res.status(404).json(`Restaurant not found lets check the ID:${id}  ${deletedRestaurant}`);
   }
 });
 

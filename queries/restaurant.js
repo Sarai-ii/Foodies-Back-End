@@ -1,4 +1,4 @@
-const db = require("../db/dbconfig.js");
+const db = require("../db/dbconfig");
 
 //SHOW ALL ((GET))
 const getAllRestaurants = async () => {
@@ -14,7 +14,6 @@ const getAllRestaurants = async () => {
 const getRestaurant = async (id) => {
   try {
     const oneRestaurant = await db.one("SELECT * FROM restaurants WHERE id=$1", id);
-    // return await db.one("SELECT * FROM restaurants WHERE id=$1", id);
     return oneRestaurant;
   } catch (error) {
     return error;
@@ -46,15 +45,24 @@ const createRestaurant = async (restaurant) => {
 // DELETE (DELETE)
 const deleteRestaurant = async (id) => {
   try {
-    const deletedRestaurant = await db.one(
-      "DELETE FROM restaurants WHERE id = $1 RETURNING *",
-      id
-    );
+    const deletedRestaurant = await db.one("DELETE FROM restaurants WHERE id = $1 RETURNING *", id);
     return deletedRestaurant;
   } catch (error) {
     return error;
   }
 };
+// DELETE (DELETE)
+// const deleteRestaurant = async (id) => {
+//   try {
+
+//     await db.any("DELETE FROM restaurants WHERE id = $1", [id]);
+//     // If no error is thrown, the delete was successful
+//     return { message: 'Restaurant deleted successfully' };
+//   } catch (error) {
+//     return { error: 'Restaurant not found or an error occurred' };
+//   }
+// };
+
 
 //UPDATE (PUT)
 const updateRestaurant = async (id, restaurant) => {

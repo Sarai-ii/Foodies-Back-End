@@ -14,36 +14,7 @@ I created Foodies because I noticed a lot of flaws within many other food delive
 4. Zero Hidden Fees: no more fees that make the food nearly impossible to afford.
 
 ## Getting Started
-
-#### `/restaurants`
-- Displays all of the restaurants we currently offer to our customers
-    - restaurant name
-    - street_num 
-    - street_name  
-    - image
- #### `/restaurants/:id`
-- Displays details about the restaurant including their menu/items available for order.
-
- #### `/restaurants/:id/menu`
-- Displays two buttons
-  - <kbd>back</kbd>, takes the user back to the `/restaurants` view
-  - <kbd>delete</kbd>, deletes the menu item and takes the user back to the `/restaurants` view
-  - <kbd>edit</kbd>, edits the menu item and takes the user back to the `/restaurants/:id` view
-
-#### `/restaurants/new`
-- Displays a form with the following inputs and appropriate labels:
-    - restaurant name
-    - category 
-    - self_delivery
-    - street_num 
-    - street_name 
-    - city 
-    - state 
-    - zip
-    - opens 
-    - closes 
-    - image
-
-#### Delete & Edit Functionality 
-Available on the show page you can delete or edit any restaurant
-## Future Features
+-Fork and Clone this repo
+`psql -U postgres -f db/schema.sql` 
+`psql -U postgres -f db/seed.sql`
+`Nodemon Server.js`
